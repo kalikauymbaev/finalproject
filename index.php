@@ -1,3 +1,13 @@
+<?php 
+
+include 'logic.php';
+
+if (check()) {
+  header("Location: main.php");
+}
+
+ ?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -64,7 +74,6 @@
             <a class="navbar_title-link" href="#!"><span class="navbar_span-title">i</span>Courses</a>
           </div>
           <div class="navbar_register">
-            <a class="navbar_register-about" href="#!">O нас</a>
             <a class="navbar_register-sign-up" href="#!">Войти</a>
             <a class="navbar_register-registration" href="#!">Присоединиться</a>
             <a class="navbar_exit-btn" href="#!"><img src="./img/exitBtn.svg" alt=""></a>
@@ -85,24 +94,24 @@
           </ul>
         </div>
         <div class="register_container">
-          <div class="register_panel active" data-index="0">
+          <form class="register_panel active" data-index="0" action="logic.php" method="POST">
             <label class="register_labelname" for="email">EMAIL</label>
-            <input class="register_inputname" type="email" placeholder="Email">
-            <label class="signup_labelname" for="fullname">PASSWORD <a href="#!">(Forgot password?)</a></label>
-            <input class="signup_inputname" type="password" placeholder="Password">
-            <input class="register_btn" type="submit" value="Регистрироваться" />
+            <input class="register_inputname" type="email" placeholder="Email" name="email">
+            <label class="signup_labelname" for="fullname">PASSWORD</label>
+            <input class="signup_inputname" type="password" placeholder="Password" name="pass">
+            <input class="register_btn" type="submit" value="Войти" name="sign"/>
             <a class="register_linktext" href="#!">By signing up to create an account I accept iCourses’ Terms of Use and Privacy Policy</a>
-          </div>
-          <div class="register_panel" data-index="1">
-            <label class="register_labelname" for="fullname">FULL NAME</label>
-            <input class="register_inputname" type="text" placeholder="Full Name">
-            <label class="register_labelname" for="email">EMAIL</label>
-            <input class="register_inputname" type="email" placeholder="Email">
-            <label class="register_labelname" for="fullname">PASSWORD <span>(Between 8-72 characters)</span></label>
-            <input class="register_inputname" type="password" placeholder="Password">
-            <input class="register_btn" type="submit" value="Регистрироваться" />
-            <a class="register_linktext" href="#!">By signing up to create an account I accept iCourses’ Terms of Use and Privacy Policy</a>
-          </div>
+          </form>
+          <form class="register_panel" data-index="1" action="logic.php" method="POST">
+              <label class="register_labelname" for="fullname">FULL NAME</label>
+              <input class="register_inputname" type="text" placeholder="Full Name" name="name">
+              <label class="register_labelname" for="email">EMAIL</label>
+              <input class="register_inputname" type="email" placeholder="Email" name="email">
+              <label class="register_labelname" for="fullname">PASSWORD <span>(Between 8-72 characters)</span></label>
+              <input class="register_inputname" type="password" placeholder="Password" name="pass">
+              <input class="register_btn" type="submit" value="Регистрироваться" name="register"/>
+              <a class="register_linktext" href="#!">By signing up to create an account I accept iCourses’ Terms of Use and Privacy Policy</a>
+          </form>
         </div>
     </div>
     </section>
