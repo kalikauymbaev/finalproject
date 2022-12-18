@@ -1,15 +1,15 @@
 const selected = document.querySelector(".selected");
-    const optionsContainer = document.querySelector(".options-container");
-    const optionsList = document.querySelectorAll(".option");
-    const navbarSignUp = document.querySelector(".navbar_register-sign-up")
-    const navbarRegister = document.querySelector(".navbar_register-registration")
-    const registerEffect = document.querySelector(".register_effect");
-    const registerTabsLinks = document.querySelectorAll(".register_tabs a");
-    const registerPanels = document.querySelectorAll(".register_panel");
-    const navbarExitBtn = document.querySelector(".navbar_exit-btn");
-    const navbarTitle = document.querySelector(".navbar_title-link")
-    const navbarTitleSpan = document.querySelector(".navbar_span-title")
-    const headerRegister = document.querySelector(".header_register_registration")
+const optionsContainer = document.querySelector(".options-container");
+const optionsList = document.querySelectorAll(".option");
+const navbarSignUp = document.querySelector(".navbar_register-sign-up")
+const navbarRegister = document.querySelector(".navbar_register-registration")
+const registerEffect = document.querySelector(".register_effect");
+const registerTabsLinks = document.querySelectorAll(".register_tabs a");
+const registerPanels = document.querySelectorAll(".register_panel");
+const navbarExitBtn = document.querySelector(".navbar_exit-btn");
+const navbarTitle = document.querySelector(".navbar_title-link")
+const navbarTitleSpan = document.querySelector(".navbar_span-title")
+const headerRegister = document.querySelector(".header_register_registration")
 
 selected.addEventListener("click", () => {
     optionsContainer.classList.toggle("active");

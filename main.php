@@ -21,7 +21,6 @@ if (!check()) {
   />
 </head>
 <body>
-        <!--NAVBAR START-->
         <nav class="nav">
             <div class="container">
 
@@ -38,29 +37,23 @@ if (!check()) {
                   <div class="select-box">
                     <div class="options-container">
                       <div class="option">
-                        <a href="uxcourses.html">UI/UX Дизайн</a>
+                        <a href="uxcourses.php">UI/UX Дизайн</a>
                       </div>
                       <div class="option">
-                        <a href="webcourses.html">Web Разработка</a>
+                        <a href="webcourses.php">Web Разработка</a>
                       </div>
                       <div class="option">
-                        <a href="mobilecourses.html">Мобильная Разработка</a>
+                        <a href="mobilecourses.php">Мобильная Разработка</a>
                       </div>
                       <div class="option">
-                        <a href="smmcourses.html">SMM</a>
+                        <a href="smmcourses.php">SMM</a>
                       </div>
                       <div class="option">
-                        <a href="designcourses.html">Дизайн</a>
+                        <a href="designcourses.php">Дизайн</a>
                       </div>
                     </div>
                     <div class="selected">Курсы</div>
                   </div>
-                  <!--ADAPTIVE-NAVBAR-ABOUT START-->
-                  <div class="adaptive_about-us">
-                    <a href="#!" class="adaptive_about">O нас</a>
-                    <a class="adaptive_bell" href="#!"><i class="far fa-bell"></i></a>  
-                  </div>
-                  <!--ADAPTIVE-NAVBAR-ABOUT END-->
                   <div class="navbar_content-search">
                     <div class="navbar_content-search-wrap">
                       <div class="search">
@@ -77,23 +70,22 @@ if (!check()) {
                 </div>
                 <div class="navbar_register">
                   <a class="navbar_register-about" href="logout.php">Выйти</a>
-                  <a class="navbar_bell" href="#!"><i class="far fa-bell"></i></a>  
                   <div class="navbar_user">
                     <div class="navbar_user-container">
                       <div class="user_option">
-                        <a href="user.html"> <img src="./img/userprofileicon.svg" alt="profile"> Профиль</a>
+                        <a href="user.php"> <img src="./img/userprofileicon.svg" alt="profile"> Профиль</a>
                       </div>
                       <div class="user_option">
-                        <a href="courses.html"> <img src="./img/usercoursicon.svg" alt="course" style="margin-right: 15px;"> Мои курсы</a>
+                        <a href="courses.php"> <img src="./img/usercoursicon.svg" alt="course" style="margin-right: 15px;"> Мои курсы</a>
                       </div>
                       <div class="user_option">
-                        <a href="user.html"> <img src="./img/userdiplomicon.svg" alt="diplom"> Достижения</a>
+                        <a href="user.php"> <img src="./img/userdiplomicon.svg" alt="diplom"> Достижения</a>
                       </div>
                       <div class="user_option">
-                        <a href="user.html"> <img src="./img/usercloudicon.svg" alt="cloud"> Загрузки</a>
+                        <a href="user.php"> <img src="./img/usercloudicon.svg" alt="cloud"> Загрузки</a>
                       </div>
                       <div class="user_option">
-                        <a href="#!"> <img src="./img/userexiticon.svg" alt="exit"> Выйти</a>
+                        <a href="logout.php"> <img src="./img/userexiticon.svg" alt="exit"> Выйти</a>
                       </div>
                     </div>
                     <div class="nabvar_user-name"><img src="./img/username.png" alt="username"><p><?php echo $_COOKIE['email']; ?></p></div>
@@ -102,9 +94,6 @@ if (!check()) {
               </div>
             </div>
           </nav>
-          <!--NAVBAR END-->
-
-    <!--HEADER START-->
       <header class="header">
       <div class="container">
         <div class="header_content">
@@ -112,7 +101,7 @@ if (!check()) {
             <h1>Онлайн курсы <br> в одном месте</h1>
             <p>Развивайте свою карьеру. Получите доступ <br> к нашим высококачественным онлайн-курсам</p>
             <div class="header_register_registration-border">
-              <a class="header_register_registration" href="courses.html">К курсам</a>
+              <a class="header_register_registration" href="courses.php">К курсам</a>
             </div>
           </div>
           <div class="header_right">
@@ -121,9 +110,6 @@ if (!check()) {
         </div>
       </div>
       </header>
-    <!--HEADER END-->
-
-        <!--HEADER COURSERS START-->
         <section class="header_coursers">
           <div class="container">
             <div class="header_coursers_title">
@@ -153,20 +139,14 @@ if (!check()) {
             </div>
           </div>
         </section>
-        <!--HEADER COURSERS END-->
-    
-        <!--FOOTER START-->
         <footer class="footer">
           <div class="container">
             <div class="footer_content">
-              <p class="footer_year">Taraz 2021</p>
+              <p class="footer_year">Kaskelen 2022</p>
               <a class="footer_logo" href="#!"><span>i</span>Courses</a>
             </div>
           </div>
         </footer>
-        <!--FOOTER END-->
-
-
         <script src="js/profile.js"></script>
 </body>
 </html>

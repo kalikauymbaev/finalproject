@@ -1,3 +1,9 @@
+<?php 
+
+include 'logic.php';
+
+ ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +14,6 @@
 	<title>iCourses</title>
 </head>
 <body>
-		<!-- NAVBAR-->
         <nav class="nav">
             <div class="container">
               <div class="navbar">
@@ -16,19 +21,19 @@
                   <div class="select-box">
                     <div class="options-container">
                       <div class="option">
-                        <a href="uxcourses.html">UI/UX Дизайн</a>
+                        <a href="uxcourses.php">UI/UX Дизайн</a>
                       </div>
                       <div class="option">
-                        <a href="webcourses.html">Web Разработка</a>
+                        <a href="webcourses.php">Web Разработка</a>
                       </div>
                       <div class="option">
-                        <a href="mobilecourses.html">Мобильная Разработка</a>
+                        <a href="mobilecourses.php">Мобильная Разработка</a>
                       </div>
                       <div class="option">
-                        <a href="smmcourses.html">SMM</a>
+                        <a href="smmcourses.php">SMM</a>
                       </div>
                       <div class="option">
-                        <a href="designcourses.html">Дизайн</a>
+                        <a href="designcourses.php">Дизайн</a>
                       </div>
                     </div>
                     <div class="selected">Курсы</div>
@@ -48,27 +53,25 @@
                   <a class="navbar_title-link" href="main.php"><span class="navbar_span-title">i</span>Courses</a>
                 </div>
                 <div class="navbar_register">
-                  <a class="navbar_register-about" href="#!">O нас</a>
-                  <a class="navbar_bell" href="#!"><i class="far fa-bell"></i></a>  
                   <div class="navbar_user">
                     <div class="navbar_user-container">
-                      <div class="user_option">
-                        <a href="user.html"> <img src="./img/userprofileicon.svg" alt="profile"> Профиль</a>
-                      </div>
-                      <div class="user_option">
-                        <a href="#!"> <img src="./img/usercoursicon.svg" alt="course" style="margin-right: 15px;"> Мои курсы</a>
-                      </div>
-                      <div class="user_option">
-                        <a href="#!"> <img src="./img/userdiplomicon.svg" alt="diplom"> Достижения</a>
-                      </div>
-                      <div class="user_option">
-                        <a href="#!"> <img src="./img/usercloudicon.svg" alt="cloud"> Загрузки</a>
-                      </div>
-                      <div class="user_option">
-                        <a href="#!"> <img src="./img/userexiticon.svg" alt="exit"> Выйти</a>
-                      </div>
-                    </div>
-                    <div class="nabvar_user-name"><img src="./img/username.png" alt="username">Devon Lane</div>
+                            <div class="user_option">
+                                <a href="user.php"> <img src="./img/userprofileicon.svg" alt="profile"> Профиль</a>
+                            </div>
+                            <div class="user_option">
+                                <a href="courses.php"> <img src="./img/usercoursicon.svg" alt="course" style="margin-right: 15px;"> Мои курсы</a>
+                            </div>
+                            <div class="user_option">
+                                <a href="user.php"> <img src="./img/userdiplomicon.svg" alt="diplom"> Достижения</a>
+                            </div>
+                            <div class="user_option">
+                                <a href="user.php"> <img src="./img/usercloudicon.svg" alt="cloud"> Загрузки</a>
+                            </div>
+                            <div class="user_option">
+                                <a href="logout.php"> <img src="./img/userexiticon.svg" alt="exit"> Выйти</a>
+                            </div>
+                        </div>
+                    <div class="nabvar_user-name"><img src="./img/username.png" alt="username"><p><?php echo $_COOKIE['email']; ?></p></div>
                   </div>
                 </div>
               </div>
@@ -78,11 +81,11 @@
 				<div class="container">
 				<section class="bread">
 					<div class="bread">
-						<a href="courses.html">Главная страница</a>
+						<a href="courses.php">Главная страница</a>
 						<i class="fas fa-angle-right"></i>
-						<a href="courses.html">Все Курсы</a>
+						<a href="courses.php">Все Курсы</a>
 						<i class="fas fa-angle-right"></i>
-						<a href="webcourses.html">Web Разработка</a>
+						<a href="webcourses.php">Web Разработка</a>
 						<i class="fas fa-angle-right"></i>
 						<a href="#">Front-End Web Разработка</a>
 					</div>
@@ -120,13 +123,6 @@
 				<div class="container">
 					<div class="video__player__main">
 						<iframe width="760" height="515" src="https://www.youtube.com/embed/5YDVJaItmaY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
-					<div class="video__player_btns">
-						<a href="sandboxhtmljs.html" target="_blank" class="download__course">Потренироваться</a>
-						<a href="#" class="download__materials">Скачать материалы курса</a>
-						<a href="#"><i class="fas fa-heart"></i></a>
-						<a href="#"><i class="far fa-thumbs-up"></i></a>
-						<a href="#"><i class="far fa-thumbs-down"></i></a>
 					</div>
 				</div>
 			</section>
@@ -257,11 +253,11 @@
 			<footer class="footer">
 			<div class="container">
 			  <div class="footer_content">
-			    <p class="footer_year">Taraz 2021</p>
+			    <p class="footer_year">Kaskelen 2022</p>
 			    <a class="footer_logo" href="main.php"><span>i</span>Courses</a>
 			  </div>
 			</div>
 			</footer>
-	<script src="js/main.js"></script>
+	<script src="js/profile.js"></script>
 </body>
 </html>

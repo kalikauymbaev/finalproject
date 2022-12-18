@@ -1,8 +1,8 @@
 <?php
-$servername = "localhost"; // name of server
-$username = "root"; //name of user
-$password = ""; //pass
-$name_db = "finalproject"; //name of table
+$servername = "localhost";
+$username = "root";
+$password = "";
+$name_db = "finalproject";
 
 $conn = new mysqli($servername, $username, $password, $name_db);
 $conn->set_charset( 'utf8' ); 

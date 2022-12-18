@@ -1,3 +1,9 @@
+<?php
+
+include 'logic.php';
+
+ ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,29 +33,23 @@
                     <div class="select-box">
                         <div class="options-container">
                             <div class="option">
-                                <a href="uxcourses.html">UI/UX Дизайн</a>
+                                <a href="uxcourses.php">UI/UX Дизайн</a>
                             </div>
                             <div class="option">
-                                <a href="webcourses.html">Web Разработка</a>
+                                <a href="webcourses.php">Web Разработка</a>
                             </div>
                             <div class="option">
-                                <a href="mobilecourses.html">Мобильная Разработка</a>
+                                <a href="mobilecourses.php">Мобильная Разработка</a>
                             </div>
                             <div class="option">
-                                <a href="smmcourses.html">SMM</a>
+                                <a href="smmcourses.php">SMM</a>
                             </div>
                             <div class="option">
-                                <a href="designcourses.html">Дизайн</a>
+                                <a href="designcourses.php">Дизайн</a>
                             </div>
                         </div>
                         <div class="selected">Курсы</div>
                     </div>
-                    <!--ADAPTIVE-NAVBAR-ABOUT START-->
-                    <div class="adaptive_about-us">
-                        <a href="#!" class="adaptive_about">O нас</a>
-                        <a class="adaptive_bell" href="#!"><i class="far fa-bell"></i></a>
-                    </div>
-                    <!--ADAPTIVE-NAVBAR-ABOUT END-->
                     <div class="navbar_content-search">
                         <div class="navbar_content-search-wrap">
                             <div class="search">
@@ -65,55 +65,45 @@
                     <a class="navbar_title-link" href="main.php"><span class="navbar_span-title">i</span>Courses</a>
                 </div>
                 <div class="navbar_register">
-                    <a class="navbar_register-about" href="#!">O нас</a>
-                    <a class="navbar_bell" href="#!"><i class="far fa-bell"></i></a>
                     <div class="navbar_user">
                         <div class="navbar_user-container">
                             <div class="user_option">
-                                <a href="user.html"> <img src="./img/userprofileicon.svg" alt="profile"> Профиль</a>
+                                <a href="user.php"> <img src="./img/userprofileicon.svg" alt="profile"> Профиль</a>
                             </div>
                             <div class="user_option">
-                                <a href="courses.html"> <img src="./img/usercoursicon.svg" alt="course" style="margin-right: 15px;"> Мои курсы</a>
+                                <a href="courses.php"> <img src="./img/usercoursicon.svg" alt="course" style="margin-right: 15px;"> Мои курсы</a>
                             </div>
                             <div class="user_option">
-                                <a href="user.html"> <img src="./img/userdiplomicon.svg" alt="diplom"> Достижения</a>
+                                <a href="user.php"> <img src="./img/userdiplomicon.svg" alt="diplom"> Достижения</a>
                             </div>
                             <div class="user_option">
-                                <a href="user.html"> <img src="./img/usercloudicon.svg" alt="cloud"> Загрузки</a>
+                                <a href="user.php"> <img src="./img/usercloudicon.svg" alt="cloud"> Загрузки</a>
                             </div>
                             <div class="user_option">
-                                <a href="#!"> <img src="./img/userexiticon.svg" alt="exit"> Выйти</a>
+                                <a href="logout.php"> <img src="./img/userexiticon.svg" alt="exit"> Выйти</a>
                             </div>
                         </div>
                         <div class="nabvar_user-name"><img src="./img/username.png" alt="username">
-                            <p>Devon Lane</p>
+                            <p><?php echo $_COOKIE['email']; ?></p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </nav>
-    <!--NAVBAR END-->
-    <!--Header-->
     <section class="profile">
         <div class="container">
             <div class="profile_header">
                 <div class="profile_img">
                     <img src="./img/Ellipse 2.png" alt="">
-                    <h1>Davon Lane</h1>
-                    <div class="profile_href">
-                        <a href="#">Pick a username</a>
-                        <a href="#">Add your bio</a>
-                    </div>
+                    <h1><?php echo $_COOKIE['email']; ?></h1>
                 </div>
                 <div class="profile_btn">
 
                     <button id="myBtn">Редактировать <br> профиль</button>
 
-                    <!-- The Modal -->
                     <div id="myModal" class="modal">
 
-                        <!-- Modal content -->
                         <div class="modal-content">
                             <a class="close">&times;</a>
                             <h1>Редактировать</h1>
@@ -135,12 +125,9 @@
             </div>
         </div>
     </section>
-    <!--Header end-->
-    <!--Course-->
     <section class="course">
         <div class="container">
             <div class="tabs">
-
                 <input type="radio" name="tab-btn" id="tab-btn-1" value="" checked>
                 <label class="firs" for="tab-btn-1"><img class="active" style="padding: 0px 10px;" src="./img/book.svg" alt=""> Обзор </label>
                 <input type="radio" name="tab-btn" id="tab-btn-2" value="">
@@ -299,20 +286,15 @@
                 </div>
             </div>
         </div>
-        <!--Course-->
-        <!--Footer-->
         <footer class="footer ">
             <div class="container ">
                 <div class="footer_content ">
-                    <p class="footer_year ">Taraz 2021</p>
+                    <p class="footer_year ">Kaskelen 2022</p>
                     <a class="footer_logo " href="main.php"><span>i</span>Courses</a>
                 </div>
             </div>
         </footer>
     </section>
-    <!--Footer end-->
     <script src="js/profile.js"></script>
-    <script src="js/main.js"></script>
 </body>
-
 </html>

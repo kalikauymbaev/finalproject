@@ -1,5 +1,3 @@
-//NAVBAR JS START
-//cours js start
 const selected = document.querySelector(".selected");
 const optionsContainer = document.querySelector(".options-container");
 const optionsList = document.querySelectorAll(".option");
@@ -15,9 +13,7 @@ optionsList.forEach(o => {
         optionsContainer.classList.remove("active");   
     });
 });
-//cours js end
 
-//username js start
 const nabvarUserName = document.querySelector(".nabvar_user-name");
 const navbarUserContainer = document.querySelector(".navbar_user-container");
 const userOption = document.querySelectorAll(".user_option");
@@ -34,9 +30,6 @@ userOption.forEach(o => {
     });
 });
 
-//username js end
-
-//burger start осы жакта туру керек обязательно!!!!!!!!!!!!!
 (function() {
     const burgerItem = document.querySelector('.burger');
     const menu = document.querySelector('.navbar_content');
@@ -50,8 +43,6 @@ userOption.forEach(o => {
         document.body.style.overflow = 'visible'
     });
 }());
-
-//burger end
 
 navbarSignUp.addEventListener("click", () => {
     registerEffect.classList.toggle("blur_effect-active");
@@ -77,8 +68,6 @@ navbarExitBtn.addEventListener("click", () => {
     navbarTitleSpan.classList.toggle("active")
 })
 
-
-
 for (let el of registerTabsLinks) {
     el.addEventListener("click", e => {
       e.preventDefault();
@@ -94,4 +83,3 @@ for (let el of registerTabsLinks) {
       panel[0].classList.add("active");
       });
     }
-//NAVBAR JS END

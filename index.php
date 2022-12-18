@@ -13,7 +13,7 @@ if (check()) {
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/index.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
@@ -53,12 +53,6 @@ if (check()) {
               </div>
               <div class="selected">Курсы</div>
             </div>
-            <!--ADAPTIVE-NAVBAR-ABOUT START-->
-            <div class="adaptive_about-us">
-              <a href="#!" class="adaptive_about">O нас</a>
-              <a class="adaptive_bell" href="#!"><i class="far fa-bell"></i></a>  
-            </div>
-            <!--ADAPTIVE-NAVBAR-ABOUT END-->
             <div class="navbar_content-search">
               <div class="navbar_content-search-wrap">
                 <div class="search">
@@ -163,9 +157,9 @@ if (check()) {
     <footer class="footer">
       <div class="container">
         <div class="footer_content">
-          <p class="footer_year">Taraz 2021</p>
+          <p class="footer_year">Kaskelen 2022</p>
           <a class="footer_logo" href="#!"><span>i</span>Courses</a>
-          <p class="footer_author" title="Developer: Yerassyl Dauren Azamat">Designed by <span>Bekzat</span></p>
+          <p class="footer_author">Designed by <span>Daulet, Yelnar, Kali</span></p>
         </div>
       </div>
     </footer>

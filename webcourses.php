@@ -1,3 +1,6 @@
+<?php 
+include 'logic.php';
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,28 +11,27 @@
 	<title>iCourses</title>
 </head>
 <body>
-	<!-- NAVBAR-->
         <nav class="nav">
             <div class="container">
               <div class="navbar">
                 <div class="navbar_content">
                   <div class="select-box">
                     <div class="options-container">
-                      <div class="option">
-                        <a href="uxcourses.html">UI/UX Дизайн</a>
-                      </div>
-                      <div class="option">
-                        <a href="webcourses.html">Web Разработка</a>
-                      </div>
-                      <div class="option">
-                        <a href="mobilecourses.html">Мобильная Разработка</a>
-                      </div>
-                      <div class="option">
-                        <a href="smmcourses.html">SMM</a>
-                      </div>
-                      <div class="option">
-                        <a href="designcourses.html">Дизайн</a>
-                      </div>
+						<div class="option">
+							<a href="uxcourses.php">UI/UX Дизайн</a>
+						</div>
+						<div class="option">
+							<a href="webcourses.php">Web Разработка</a>
+						</div>
+						<div class="option">
+							<a href="mobilecourses.php">Мобильная Разработка</a>
+						</div>
+						<div class="option">
+							<a href="smmcourses.php">SMM</a>
+						</div>
+						<div class="option">
+							<a href="designcourses.php">Дизайн</a>
+						</div>
                     </div>
                     <div class="selected">Курсы</div>
                   </div>
@@ -48,90 +50,55 @@
 					<a class="navbar_title-link" href="main.php"><span class="navbar_span-title">i</span>Courses</a>
                 </div>
                 <div class="navbar_register">
-                  <a class="navbar_register-about" href="#!">O нас</a>
-                  <a class="navbar_bell" href="#!"><i class="far fa-bell"></i></a>  
                   <div class="navbar_user">
                     <div class="navbar_user-container">
-                      <div class="user_option">
-                        <a href="user.html"> <img src="./img/userprofileicon.svg" alt="profile"> Профиль</a>
-                      </div>
-                      <div class="user_option">
-                        <a href="#!"> <img src="./img/usercoursicon.svg" alt="course" style="margin-right: 15px;"> Мои курсы</a>
-                      </div>
-                      <div class="user_option">
-                        <a href="#!"> <img src="./img/userdiplomicon.svg" alt="diplom"> Достижения</a>
-                      </div>
-                      <div class="user_option">
-                        <a href="#!"> <img src="./img/usercloudicon.svg" alt="cloud"> Загрузки</a>
-                      </div>
-                      <div class="user_option">
-                        <a href="#!"> <img src="./img/userexiticon.svg" alt="exit"> Выйти</a>
-                      </div>
-                    </div>
-                    <div class="nabvar_user-name"><img src="./img/username.png" alt="username">Devon Lane</div>
+                            <div class="user_option">
+                                <a href="user.php"> <img src="./img/userprofileicon.svg" alt="profile"> Профиль</a>
+                            </div>
+                            <div class="user_option">
+                                <a href="courses.php"> <img src="./img/usercoursicon.svg" alt="course" style="margin-right: 15px;"> Мои курсы</a>
+                            </div>
+                            <div class="user_option">
+                                <a href="user.php"> <img src="./img/userdiplomicon.svg" alt="diplom"> Достижения</a>
+                            </div>
+                            <div class="user_option">
+                                <a href="user.php"> <img src="./img/usercloudicon.svg" alt="cloud"> Загрузки</a>
+                            </div>
+                            <div class="user_option">
+                                <a href="logout.php"> <img src="./img/userexiticon.svg" alt="exit"> Выйти</a>
+                            </div>
+                        </div>
+                    <div class="nabvar_user-name"><img src="./img/username.png" alt="username"><p><?php echo $_COOKIE['email']; ?></p></div>
                   </div>
                 </div>
               </div>
             </div>
         </nav>
-
-<!-- COURSES MENU -->
-	<section class="courses">
+	<section class="bread">
 		<div class="container">
-			<div class="courses__main">
-				<div class="courses__title">
-					<h2>Все курсы</h2>
-				</div>
-				<div class="courses__menu">
-					<a href="uxcourses.html">
-						<div class="courses__item">
-							<img src="img/ux ui.png" alt="">
-							<h3 class="courses__menu_text">UI/UX <br>Дизайн</h3>
-						</div>
-					</a>
-					<a href="webcourses.html">
-						<div class="courses__item">
-							<img src="img/web.png" alt="">
-							<h3 class="courses__menu_text">Web <br>Разработка</h3>
-						</div>
-					</a>
-					<a href="smmcourses.html">
-						<div class="courses__item">
-							<img src="img/smm.png" alt="">
-							<h3 class="courses__menu_text">СММ</h3>
-						</div>
-					</a>
-					<a href="mobilecourses.html">
-						<div class="courses__item">
-							<img src="img/mobile.png" alt="">
-							<h3 class="courses__menu_text">Mобильная <br>Разработка</h3>
-						</div>
-					</a>
-					<a href="designcourses.html">
-						<div class="courses__item">
-							<img src="img/design.png" alt="">
-							<h3 class="courses__menu_text">Дизайн</h3>
-						</div>
-					</a>
-				</div>
+			<div class="bread">
+				<a href="courses.php">Главная страница</a>
+				<i class="fas fa-angle-right"></i>
+				<a href="webcourses.php">Web Разработка</a>
 			</div>
-
-
-	<!-- POPULAR COURSES -->
+		</div>
+	</section>
+	<section class="courses__web">
+		<div class="container">
 			<div class="courses__popular">
 				<div class="courses__popular_title">
-					<h3>Популярные курсы</h3>
+					<h3>Web разработка</h3>
 				</div>
 				<div class="courses__popular__items">
 					<div class="course__item">
 						<div class="course__image">
-							<img src="img/дизайн интерьера.png" alt="">
+							<img src="img/WEB/Img of a course.png" alt="">
 						</div>
 						<div class="course__info">
 							<div class="course__text">
 								<div class="course__name">
-									<h2>Дизайн интерьера</h2>
-									<h4>Interier Designer</h4>
+									<h2>FRONTEND ВЕБ-РАЗРАБОТКА</h2>
+									<h4>FrontEnd Web Development</h4>
 									<p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
 								</div>
 								<div class="course__rating">
@@ -146,20 +113,20 @@
 									<p><i class="far fa-user"></i> Elton Jones</p>
 								</div>
 								<div class="course__btn">
-									<a href="insidecourses.html">Посмотреть</a>
+									<a href="insidecourses.php">Посмотреть</a>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="course__item">
 						<div class="course__image">
-							<img src="img/flutter.png" alt="">
+							<img src="img/WEB/Img of a course-1.png" alt="">
 						</div>
 						<div class="course__info">
 							<div class="course__text">
 								<div class="course__name">
-									<h2>Flutter</h2>
-									<h4>Flutter inc</h4>
+									<h2>BACKEND ВЕБ-РАЗРАБОТКА</h2>
+									<h4>BackEnd Web Development</h4>
 									<p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
 								</div>
 								<div class="course__rating">
@@ -174,20 +141,20 @@
 									<p><i class="far fa-user"></i> Elton Jones</p>
 								</div>
 								<div class="course__btn">
-									<a href="insidecourses.html">Посмотреть</a>
+									<a href="insidecourses.php">Посмотреть</a>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="course__item">
 						<div class="course__image">
-							<img src="img/target.png" alt="">
+							<img src="img/WEB/Img of a course-2.png" alt="">
 						</div>
 						<div class="course__info">
 							<div class="course__text">
 								<div class="course__name">
-									<h2>Target in Market</h2>
-									<h4>Target in marketing</h4>
+									<h2>DJANGO ВЕБ-РАЗРАБОТКА</h2>
+									<h4>Django Web Development  </h4>
 									<p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
 								</div>
 								<div class="course__rating">
@@ -202,7 +169,7 @@
 									<p><i class="far fa-user"></i> Elton Jones</p>
 								</div>
 								<div class="course__btn">
-									<a href="insidecourses.html">Посмотреть</a>
+									<a href="insidecourses.php">Посмотреть</a>
 								</div>
 							</div>
 						</div>
@@ -211,16 +178,14 @@
 			</div>
 		</div>
 	</section>
-	<!-- FOOTER -->
     <footer class="footer">
       <div class="container">
         <div class="footer_content">
-          <p class="footer_year">Taraz 2021</p>
+          <p class="footer_year">Kaskelen 2022</p>
           <a class="footer_logo" href="main.php"><span>i</span>Courses</a>
         </div>
       </div>
     </footer>
-	<script src="js/main.js"></script>
 	<script src="js/profile.js"></script>
 </body>
 </html>
